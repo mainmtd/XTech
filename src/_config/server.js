@@ -14,5 +14,5 @@ module.exports = () => {
 
     app.use(cors()).use(bodyParser()).use(router.routes()).use(router.allowedMethods());
 
-    app.listen(3001);
+    app.listen(process.env.PORT || 3001);
 }
